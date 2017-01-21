@@ -19,7 +19,7 @@
 #title           :lpi.py
 #description     :Linux Post-Installer script
 #author          :Stefano Peris
-#email           :technoprometheus@gmail.com
+#email           :techno.prometheus@gmail.com
 #date            :21/01/2017
 #version         :0.1
 #usage           :python lpi.py
@@ -71,9 +71,9 @@ def menu():
     print("[i] Info")
     print("[x] Esci")
 
-loop = True
+loop = 1
 
-while loop:        ## Ciclo che prosegue fino a quando loop = False
+while loop:        ## Ciclo che prosegue fino a quando loop = 0 (false)
     
     menu()         ## Visualizza il menu nel terminale
     print("\n")
@@ -81,6 +81,7 @@ while loop:        ## Ciclo che prosegue fino a quando loop = False
     print("\n")
     
     opzione = input("Digita l'opzione desiderata > ")
+	opzione = int(opzione)
      
     if opzione == 1:     
         print ("Menu 1 è stato selezionato")
@@ -97,7 +98,7 @@ while loop:        ## Ciclo che prosegue fino a quando loop = False
     elif opzione == 5:
         print ("Menu 5 è stato selezionato")
         ## È possibile aggiungere il codice o funzioni qui
-        loop = False # Ferma il ciclo
+        loop = 0 # Ferma il ciclo
     else:
         # Valori diversi da 1-8 e i-x generano un messaggio di errore
         input("Errore. Premi un tasto per riprovare...")
