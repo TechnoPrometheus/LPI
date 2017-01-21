@@ -43,7 +43,7 @@ import os
 opzione = 0
 
 # Pulisce lo schermo
-def Clearscreen():
+def clear_screen():
     os.system('clear')
 
 #===============================================================================
