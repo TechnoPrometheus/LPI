@@ -48,3 +48,33 @@ def clear_screen():
 
 #===============================================================================
 
+while opzione:
+    print("""
+    *---------------------------------*
+    * LINUX POST INSTALLER - Ver. 0.1 *
+    *---------------------------------*
+
+    +------------------ ABOUT -------------------+
+    + Autore: Stefano Peris <TechnoPrometheus>   +
+    + eMail: technoprometheus@gmail.com          +
+    +--------------------------------------------+
+
+    +------------------------+
+    +--------- MENU ---------+
+    +------------------------+
+
+
+    [1] Programmi CLI (Terminale)
+    [2] Utility
+    [3] Compilatori C/C++
+    [4] Librerie C/C++
+    [5] Tool di sviluppo
+    [6] Ambienti di sviluppo (IDE)
+    [7] Programmi di grafica 2D/3D
+    [8] Giochi
+    [i] Info
+    [x] Esci
+    """)
+
+    opzione = input("Digita l'opzione desiderata > ")
+
